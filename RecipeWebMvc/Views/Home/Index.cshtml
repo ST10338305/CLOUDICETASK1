@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Recipe List";
+}
+
+<h2>Welcome to the Recipes Web Page</h2>
+<p2>Please Login</p2>
+
+
+@using (Html.BeginForm("Index", "Recipes", FormMethod.Post))
+{
+    <input type="text" name="username" placeholder="Username" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <button type="submit">Login</button>
+}
